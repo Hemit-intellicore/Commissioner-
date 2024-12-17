@@ -1,0 +1,30 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('../img/hero-bg.jpg') no-repeat center center/cover;
+  padding: 100px 0;
+}
+
+.hero-section h1 {
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Program Cards */
+.program-card {
+  background-color: #4B1C23; /* Oxblood */
+  color: #fff;
+}
+
+.program-card:hover {
+  background-color: #2A1217;
+}
+
+/* Footer */
+footer {
+  background-color: #4B1C23; /* Oxblood */
+}
