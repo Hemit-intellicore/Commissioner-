@@ -3,24 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anna Benjamin Itodo - Official Website</title>
+  <title>Hon. Anna Benjamin Itodo - Women Affairs & Social Development</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="Css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background-color: #4B1C23; /* Oxblood */
+      color: white;
+      padding: 4rem 0;
+    }
+    .hero-section h1 {
+      color: gold;
+    }
+    .hero-section .btn {
+      border-radius: 50px;
+    }
+
+    /* Section Headings */
+    section h2 {
+      color: #4B1C23;
+    }
+
+    /* Impact Section */
+    .impact-box {
+      background-color: white;
+      border: 2px solid gold;
+    }
+
+    /* Programs Section */
+    .program-card {
+      background: white;
+      border-left: 5px solid #4B1C23;
+      padding: 1.5rem;
+      transition: transform 0.3s;
+    }
+    .program-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Testimonials Section */
+    .testimonial-card {
+      background: white;
+      border: 1px solid #4B1C23;
+      border-radius: 15px;
+      padding: 1.5rem;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #4B1C23;
+      color: white;
+    }
+    .footer a {
+      color: gold;
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Anna B. Itodo</a>
+      <a class="navbar-brand fw-bold" href="#">Hon. Anna B. Itodo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#departments">Departments</a></li>
+          <li class="nav-item"><a class="nav-link" href="#impact">Impact</a></li>
           <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
-          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -28,57 +86,58 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero-section text-white text-center">
-    <div class="container py-5">
-      <h1 class="display-4 fw-bold">Empowering Women, Transforming Communities</h1>
-      <p class="lead">Welcome to the official website of Hon. Anna Benjamin Itodo, Commissioner of Women Affairs and Social Development, Benue State.</p>
-      <a href="#about" class="btn btn-success btn-lg mt-3">Learn More</a>
+  <header class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Empowering Women, Strengthening Communities</h1>
+      <p class="lead">Official Website of Hon. Anna Benjamin Itodo, Commissioner for Women Affairs & Social Development, Benue State.</p>
+      <div class="mt-4">
+        <a href="#about" class="btn btn-success btn-lg mx-2">Learn More</a>
+        <a href="#programs" class="btn btn-outline-light btn-lg mx-2">Explore Programs</a>
+      </div>
     </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="py-5">
+  <section id="about" class="py-5 bg-light">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <img src="img/anna-itodo.jpg" alt="Anna Itodo" class="img-fluid rounded shadow">
+          <img src="https://via.placeholder.com/500x300" alt="Hon. Anna Benjamin Itodo" class="img-fluid rounded shadow">
         </div>
         <div class="col-md-6">
-          <h2 class="fw-bold">About Anna Benjamin Itodo</h2>
-          <p>Anna Benjamin Itodo is a trailblazer in the fight for women's rights, social development, and community empowerment in Benue State. She has dedicated her career to improving the lives of women and vulnerable groups through groundbreaking initiatives and policies.</p>
-          <a href="#departments" class="btn btn-outline-success mt-3">Explore Departments</a>
+          <h2 class="fw-bold">Meet Hon. Anna Benjamin Itodo</h2>
+          <p class="text-muted">Hon. Anna Benjamin Itodo has dedicated her life to advancing women's rights and promoting social development. Her innovative programs and initiatives continue to impact thousands of lives across Benue State and beyond.</p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check-circle-fill text-success"></i> Advocate for gender equality.</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> Leader in child protection programs.</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> Promoter of women-led entrepreneurship.</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Achievements Section -->
-  <section id="achievements" class="bg-light py-5">
+  <!-- Impact Section -->
+  <section id="impact" class="py-5">
     <div class="container text-center">
-      <h2 class="fw-bold mb-4">Key Achievements</h2>
+      <h2 class="fw-bold mb-4">Our Impact in Numbers</h2>
       <div class="row">
         <div class="col-md-4">
-          <div class="card border-0 shadow">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Empowered 5,000+ Women</h5>
-              <p class="card-text">Through skill acquisition programs across Benue State.</p>
-            </div>
+          <div class="impact-box py-4">
+            <h3>5,000+</h3>
+            <p>Women Empowered</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card border-0 shadow">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Implemented Welfare Programs</h5>
-              <p class="card-text">Providing social security to vulnerable groups.</p>
-            </div>
+          <div class="impact-box py-4">
+            <h3>200+</h3>
+            <p>Communities Reached</p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card border-0 shadow">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Improved Rural Outreach</h5>
-              <p class="card-text">Reaching underserved communities with health and education resources.</p>
-            </div>
+          <div class="impact-box py-4">
+            <h3>150+</h3>
+            <p>Skill Programs Launched</p>
           </div>
         </div>
       </div>
@@ -86,47 +145,52 @@
   </section>
 
   <!-- Programs Section -->
-  <section id="programs" class="py-5">
+  <section id="programs" class="py-5 bg-light">
     <div class="container">
-      <h2 class="fw-bold text-center mb-4">Programs and Initiatives</h2>
+      <h2 class="fw-bold text-center mb-4">Programs & Initiatives</h2>
       <div class="row">
-        <div class="col-md-6 mb-3">
-          <div class="program-card p-4 rounded shadow">
-            <h5 class="fw-bold">Skill Acquisition</h5>
-            <p>Equipping women with skills for self-reliance and economic growth.</p>
+        <div class="col-md-6">
+          <div class="program-card">
+            <h5 class="fw-bold">Women Empowerment</h5>
+            <p>Comprehensive programs providing tools for economic and social advancement for women.</p>
           </div>
         </div>
-        <div class="col-md-6 mb-3">
-          <div class="program-card p-4 rounded shadow">
+        <div class="col-md-6">
+          <div class="program-card">
             <h5 class="fw-bold">Child Protection</h5>
-            <p>Ensuring safety and well-being for children across Benue State.</p>
+            <p>Protecting vulnerable children through welfare policies and outreach programs.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Blog Section -->
-  <section id="blog" class="bg-light py-5">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">Latest Blog Posts</h2>
-      <p>Stay updated with news and articles on women's empowerment and social development.</p>
-      <a href="blog.html" class="btn btn-success mt-3">View Blog</a>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-5">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">Get in Touch</h2>
-      <p>Contact us for inquiries, partnerships, and more.</p>
-      <a href="contact.html" class="btn btn-outline-success mt-3">Contact Us</a>
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">What People Say</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="testimonial-card p-4">
+            <p class="text-muted">"Thanks to Hon. Anna's initiatives, I was able to start my own business and provide for my family."</p>
+            <p class="fw-bold text-end">- Jane Doe</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="testimonial-card p-4">
+            <p class="text-muted">"Her programs for children have changed the lives of so many in our community."</p>
+            <p class="fw-bold text-end">- John Smith</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4">
-    <p>© 2024 Anna Benjamin Itodo | Designed by <a href="https://hemitintellicore.com" class="text-white fw-bold">Hemit Intellicore Ltd</a></p>
+  <footer class="footer py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Hon. Anna Benjamin Itodo. Designed by Hemit Intellicore Ltd.</p>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
