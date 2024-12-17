@@ -1,65 +1,90 @@
 <style>
+/* Colors */
+.text-oxblood {
+  color: #800000; /* Oxblood color */
+}
+.btn-oxblood {
+  background-color: #800000;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.btn-oxblood:hover {
+  background-color: #5a0000;
+}
+
+/* Gallery Carousel */
+.gallery-carousel {
+  display: flex;
+  scroll-behavior: smooth;
+}
+.gallery-item {
+  max-width: 300px;
+  flex: 0 0 auto;
+  text-align: center;
+}
 .gallery-item img {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 .gallery-item img:hover {
   transform: scale(1.05);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
   </style>
 <!-- Gallery Section -->
-<section id="gallery" class="py-5">
+<!-- Gallery Section -->
+<section id="gallery" class="py-5 bg-light">
   <div class="container">
-    <h2 class="fw-bold text-center mb-4">Photo Gallery</h2>
-    <p class="text-muted text-center mb-5">Explore moments captured from various events, initiatives, and programs led by Hon. Anna Benjamin Itodo.</p>
-    <div class="row g-3">
-      <!-- Image 1 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="gallery-item">
-          <img src="https://via.placeholder.com/400x300" alt="Gallery Image 1" class="img-fluid rounded shadow" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/800x600">
+    <h2 class="fw-bold text-center mb-4 text-oxblood">Photo Gallery</h2>
+    <p class="text-muted text-center mb-5">A glimpse into the remarkable moments from Hon. Anna Benjamin Itodo's initiatives and programs.</p>
+    <div class="row justify-content-center">
+      <!-- Left Arrow for Carousel -->
+      <div class="col-auto d-none d-md-block">
+        <button class="btn btn-oxblood" id="prevButton"><i class="bi bi-chevron-left"></i></button>
+      </div>
+      <!-- Image Slider -->
+      <div class="col-12 col-md-10">
+        <div class="gallery-carousel d-flex overflow-hidden position-relative" id="galleryCarousel">
+          <!-- Gallery Image 1 -->
+          <div class="gallery-item flex-shrink-0 mx-2">
+            <img src="https://via.placeholder.com/600x400" alt="Gallery Image 1" class="img-fluid rounded shadow-lg">
+            <p class="mt-3 text-center text-success fw-bold">Empowering Rural Women</p>
+          </div>
+          <!-- Gallery Image 2 -->
+          <div class="gallery-item flex-shrink-0 mx-2">
+            <img src="https://via.placeholder.com/600x400" alt="Gallery Image 2" class="img-fluid rounded shadow-lg">
+            <p class="mt-3 text-center text-success fw-bold">Celebrating Women Leaders</p>
+          </div>
+          <!-- Gallery Image 3 -->
+          <div class="gallery-item flex-shrink-0 mx-2">
+            <img src="https://via.placeholder.com/600x400" alt="Gallery Image 3" class="img-fluid rounded shadow-lg">
+            <p class="mt-3 text-center text-success fw-bold">Supporting the Girl Child</p>
+          </div>
         </div>
       </div>
-      <!-- Image 2 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="gallery-item">
-          <img src="https://via.placeholder.com/400x300" alt="Gallery Image 2" class="img-fluid rounded shadow" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/800x600">
-        </div>
-      </div>
-      <!-- Image 3 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="gallery-item">
-          <img src="https://via.placeholder.com/400x300" alt="Gallery Image 3" class="img-fluid rounded shadow" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://via.placeholder.com/800x600">
-        </div>
-      </div>
-      <!-- Add more images as needed -->
-    </div>
-  </div>
-
-  <!-- Modal for Viewing Full-Size Images -->
-  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="imageModalLabel">Gallery Image</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img id="modalImage" src="" alt="Full-Size Image" class="img-fluid rounded">
-        </div>
+      <!-- Right Arrow for Carousel -->
+      <div class="col-auto d-none d-md-block">
+        <button class="btn btn-oxblood" id="nextButton"><i class="bi bi-chevron-right"></i></button>
       </div>
     </div>
   </div>
 </section>
 
 <script>
-  const imageModal = document.getElementById('imageModal');
-  const modalImage = document.getElementById('modalImage');
+  const galleryCarousel = document.getElementById('galleryCarousel');
+  const prevButton = document.getElementById('prevButton');
+  const nextButton = document.getElementById('nextButton');
 
-  // Add event listener to update modal image
-  imageModal.addEventListener('show.bs.modal', function (event) {
-    const imgElement = event.relatedTarget; // The clicked image
-    const imgSrc = imgElement.getAttribute('data-img-src');
-    modalImage.src = imgSrc;
+  // Scroll left
+  prevButton.addEventListener('click', () => {
+    galleryCarousel.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+
+  // Scroll right
+  nextButton.addEventListener('click', () => {
+    galleryCarousel.scrollBy({ left: 300, behavior: 'smooth' });
   });
 </script>
