@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Hon. Anna Benjamin Itodo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Color Palette */
+    :root {
+      --oxblood: #800000;
+      --green: #008000;
+      --gold: #d4af37;
+      --white: #ffffff;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    .text-oxblood {
+      color: var(--oxblood);
+    }
+    .bg-oxblood {
+      background-color: var(--oxblood);
+      color: var(--white);
+    }
+    .btn-gold {
+      background-color: var(--gold);
+      color: var(--white);
+    }
+    .btn-gold:hover {
+      background-color: #b68e30;
+    }
+    .icon-circle {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      background-color: var(--green);
+      color: var(--white);
+      display: inline-block;
+      text-align: center;
+    }
+    .about-image {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .about-image:hover {
+      transform: scale(1.05);
+    }
+    .mission-card:hover {
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <!-- Hero Title -->
+      <div class="text-center mb-5">
+        <h1 class="fw-bold text-oxblood">About Hon. Anna Benjamin Itodo</h1>
+        <p class="text-muted">A visionary leader driving women empowerment and social development in Benue State.</p>
+      </div>
+      <!-- About Content -->
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4">
+          <img src="https://via.placeholder.com/600x400" alt="Hon. Anna Benjamin Itodo" class="img-fluid rounded about-image">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold text-oxblood">Who Is Anna Benjamin Itodo?</h2>
+          <p class="text-muted">Hon. Anna Benjamin Itodo serves as the Commissioner for Women Affairs and Social Development, Benue State. Known for her unwavering dedication to uplifting the status of women and children, she is a beacon of hope and progress. Her innovative programs have transformed countless lives, fostering economic empowerment, education, and social inclusion.</p>
+          <p class="text-muted">With over a decade of experience in public service, Anna combines passion with expertise to deliver impactful solutions to societal challenges. Her work reflects her commitment to sustainable development and creating opportunities for all, particularly the most vulnerable in society.</p>
+          <button class="btn btn-gold mt-3">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Mission & Vision Section -->
+  <section id="mission" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-oxblood">Our Mission & Vision</h2>
+      </div>
+      <div class="row">
+        <!-- Mission -->
+        <div class="col-lg-6 mb-4">
+          <div class="p-4 border rounded mission-card bg-white">
+            <div class="d-flex align-items-center mb-3">
+              <span class="icon-circle"><i class="fas fa-bullseye"></i></span>
+              <h3 class="ms-3 text-oxblood">Mission</h3>
+            </div>
+            <p class="text-muted">To champion the rights and opportunities for women and children, fostering their empowerment through strategic programs and policies. We aim to create an inclusive society where everyone thrives, regardless of gender or background.</p>
+          </div>
+        </div>
+        <!-- Vision -->
+        <div class="col-lg-6 mb-4">
+          <div class="p-4 border rounded mission-card bg-white">
+            <div class="d-flex align-items-center mb-3">
+              <span class="icon-circle"><i class="fas fa-eye"></i></span>
+              <h3 class="ms-3 text-oxblood">Vision</h3>
+            </div>
+            <p class="text-muted">To build a society where every woman and child has the opportunity to achieve their potential, contributing meaningfully to the development of Benue State and Nigeria at large.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Section -->
+  <section id="stats" class="py-5 bg-oxblood">
+    <div class="container text-center text-white">
+      <div class="row">
+        <div class="col-md-3">
+          <h3 class="fw-bold">10+</h3>
+          <p class="text-uppercase">Years of Service</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="fw-bold">50+</h3>
+          <p class="text-uppercase">Programs Initiated</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="fw-bold">20,000+</h3>
+          <p class="text-uppercase">Lives Impacted</p>
+        </div>
+        <div class="col-md-3">
+          <h3 class="fw-bold">15+</h3>
+          <p class="text-uppercase">Awards Received</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
