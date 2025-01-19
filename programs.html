@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Initiatives & Programs | Hon. Anna Benjamin Itodo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --oxblood: #800000;
+      --green: #008000;
+      --gold: #d4af37;
+      --white: #ffffff;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    .text-oxblood {
+      color: var(--oxblood);
+    }
+    .bg-oxblood {
+      background-color: var(--oxblood);
+      color: var(--white);
+    }
+    .btn-gold {
+      background-color: var(--gold);
+      color: var(--white);
+    }
+    .btn-gold:hover {
+      background-color: #b68e30;
+    }
+    .slider {
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+    }
+    .slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .slider img:hover {
+      transform: scale(1.05);
+    }
+    .program-card {
+      transition: box-shadow 0.3s ease;
+    }
+    .program-card:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- Advertisement Slider -->
+  <section id="advert-banner" class="ad-banner">
+    <div class="ad-container">
+      <div class="ad-scroll">
+        <p>
+          🌟 Empowering Women Through Education and Training | 🌟 Join Us in Making a Difference | 🌟 Discover Our Latest Initiatives | 🌟 Together, We Build a Better Future! | 🌟 Stay Updated with the Latest News and Events!
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  /* Banner Section Styling */
+  .ad-banner {
+    background-color: #800000; /* Oxblood color */
+    color: #fff;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Scrolling Text Container */
+  .ad-container {
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  /* Animation for Scrolling */
+  .ad-scroll p {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: scroll-left 15s linear infinite;
+    color: #FFD700; /* Gold color */
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  </style>
+  
+  
+
+  <!-- Initiatives Section -->
+  <section id="initiatives" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="fw-bold text-oxblood">Our Initiatives & Programs</h1>
+        <p class="text-muted">Empowering women, children, and communities through impactful initiatives.</p>
+      </div>
+      <div class="row">
+        <!-- Initiative Card -->
+        <div class="col-lg-4 mb-4">
+          <div class="card program-card h-100">
+            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Women Empowerment">
+            <div class="card-body">
+              <h5 class="card-title text-oxblood">Women Empowerment Programs</h5>
+              <p class="card-text text-muted">Providing women with skills, resources, and opportunities to achieve financial independence and leadership roles.</p>
+              <button class="btn btn-gold w-100">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Initiative Card -->
+        <div class="col-lg-4 mb-4">
+          <div class="card program-card h-100">
+            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Youth Development">
+            <div class="card-body">
+              <h5 class="card-title text-oxblood">Youth Development Programs</h5>
+              <p class="card-text text-muted">Equipping young people with skills and mentorship for personal and professional growth.</p>
+              <button class="btn btn-gold w-100">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Initiative Card -->
+        <div class="col-lg-4 mb-4">
+          <div class="card program-card h-100">
+            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Child Protection">
+            <div class="card-body">
+              <h5 class="card-title text-oxblood">Child Protection Initiatives</h5>
+              <p class="card-text text-muted">Advocating for children's rights and creating safe environments for their development.</p>
+              <button class="btn btn-gold w-100">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="cta" class="py-5 bg-oxblood text-white">
+    <div class="container text-center">
+      <h2 class="fw-bold">Join Us in Making a Difference</h2>
+      <p class="mb-4">Partner with us or participate in our initiatives to drive social change in Benue State and beyond.</p>
+      <button class="btn btn-light btn-lg">Get Involved</button>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
